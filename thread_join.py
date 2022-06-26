@@ -9,8 +9,10 @@ if __name__=='main':
     print ('Avvio modulo main')
     #definisco l'oggetto thread
     th==threading.Tread(targhet='mythread', args=(thread2, 2))
-    #avvioin thread secondario
+    #avvio il thread secondario
     th.start()
+    #fermo l esecuzione del main fintanto non sia finito il
+    #thread secondario
     print('Main terminato')
     
 
