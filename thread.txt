@@ -1,0 +1,22 @@
+MULTITASKING
+Il sistemavoperativo puo eseguire piu programmi contemporaneamente. Questo
+viene fatto eseguendo piccoli pezzi di ogni programma in rapida successione.
+Apparentemente per l utente  sembra che siano eseguiti contemporaneamente ma in realta
+in realta esegue piccoli pezzi di ogniuno in rapida successione.
+
+MULTITHREADING
+Stessa cosama fatta dallinterprete Python su un modulo.
+In questo caso esegue porzioni differenti di codice in multitasking.
+
+In generale si uta il multithreading/ per eseguire pezzi di  codice che potrebbero
+bloccarsi in attesa di un evento oppure richiedere molto tempo di elaborazione.
+
+Se un task e lento il main potrebbe terminare prima del task. In ogni caso questo rimarra attivo fintanto
+non sia terminato.
+
+Il comando Join blocca il termine del main fino al termine di uno specifico task.
+In questo modo il main terminera sempre dopo il task.
+
+In caso di piu task contemporanei sussiste il problema del DEADLOCK.
+Un task potrebbe appropriarsi di alcune risorse necessarie ad altri e non
+rilasciarle. Questo bloccherebbe anche gli altri task.
